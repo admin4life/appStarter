@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title App Page Title
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/jumbotron-narrow.css')
+  body
+    .container
+      .header.clearfix
+        nav
+          ul.nav.nav-pills.pull-right
+            -
+              list = ["Home","About"]
+            each item in list
+              li
+                a(href=item)= item
+        h3.text-muted Project Name
+
+      block content
