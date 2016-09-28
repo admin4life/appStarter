@@ -12,5 +12,8 @@ app.get('/', function(req, res){
 app.get('/Home', function(req,res){
   res.redirect('/');
 });
+app.get('/part', function(req, res){
+  res.render('partial.pug');
+})
 
 app.listen(9999);
