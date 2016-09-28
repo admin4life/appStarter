@@ -3,7 +3,7 @@ html
   head
     title App Page Title
     link(rel='stylesheet', href='css/bootstrap.min.css')
-    link(rel='stylesheet', href='css/jumbotron-narrow.css')
+    block css
   body
     .container
       .header.clearfix
@@ -17,3 +17,5 @@ html
         h3.text-muted Project Name
 
       block content
+
+      include includes/footer
