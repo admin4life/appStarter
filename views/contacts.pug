@@ -1,0 +1,14 @@
+.form-group
+  .input-group
+    .input-group-addon &#9906
+    input.form-control(data-bind="textInput: search")
+.advSearch
+table.table.table-stripped
+  tbody(data-bind="foreach:rows")
+    tr
+      td
+        a(data-bind="value: index, attr: {href: 'contact/'+index}") &check;
+      td(data-bind="text: name.first")
+      td(data-bind="text: name.last")
+      td
+        a(target="_blank" data-bind="text: email, attr: {href: 'mailto:'+email}")
